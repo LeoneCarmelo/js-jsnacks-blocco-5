@@ -5,7 +5,7 @@ let c = []
 function myFunction(arr, a, b) {
 if ( a < b && b <= arr.length) {
     for(let i = 0; i < arr.length; i++){
-        if ( i != a && i != b && i != 0){
+        if ( i > a && i < b && i != 0){
             c.push(i)
             console.log(c)
         }
@@ -13,4 +13,4 @@ if ( a < b && b <= arr.length) {
 }
 }
 
-myFunction([1 , 2 , 3], 1 , 3)
+myFunction([1 , 2 , 3, 4, 5], 1 , 3)
