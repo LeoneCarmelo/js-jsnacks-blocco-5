@@ -60,4 +60,4 @@ let sum = 0
 courgets.forEach((element) => {
     sum += element.weight
 })
-console.log(sum)
+console.log(sum)                
